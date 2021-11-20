@@ -1,0 +1,86 @@
+@import "../../_variables";
+
+@mixin flexContainer($direction: column) {
+  display: flex;
+  flex-direction: $direction;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @include flexContainer(row);
+  justify-content: space-between;
+  background-color: $primaryColor;
+}
+
+nav {
+  @include flexContainer();
+  position: sticky;
+  top: 40px;
+  padding-right: 20px;
+  a {
+    text-decoration: none;
+    color: $textColor;
+    border-bottom: 1px solid $decorationColor;
+    padding: 10px 0;
+    width: 95%;
+    font-size: 1.3rem;
+  }
+  width: 10%;
+  height: 30%;
+}
+
+#main-container {
+  @include flexContainer();
+  justify-content: space-between;
+  border-left: 1px solid $secondaryColor;
+  padding-left: 30px;
+  width: 85%;
+}
+
+form {
+  @include flexContainer(column);
+
+  color: $textColor;
+  input,
+  select {
+    background-color: $secondaryColor;
+    color: $textColor;
+  }
+  width: 95%;
+}
+.input-wrapper {
+  @include flexContainer(row);
+  justify-content: space-between;
+  width: 50%;
+  padding: 20px 0;
+  input,
+  textarea,
+  select {
+    width: 65%;
+    background-color: $secondaryColor;
+    color: $textColor;
+    border: none;
+  }
+
+  textarea {
+    margin-bottom: 30px;
+  }
+
+  label {
+    width: 30%;
+    padding: 10px 0;
+  }
+
+  .img-input {
+    width: 20%;
+    margin-right: 20px;
+    padding: 5px;
+  }
+
+  .img-input:nth-child(5) {
+    margin: 0;
+  }
+}

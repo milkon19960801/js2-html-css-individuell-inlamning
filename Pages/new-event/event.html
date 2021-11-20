@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <a href="#main-container">Hem</a>
+      <a href="../events/events.html" target="_blank">Alla Events</a>
+      <a href="../new-event/event.html" target="_blank">Skapa Event</a>
+      <a href="../about/about.html" target="_blank">Om Oss</a>
+    </nav>
+    <div id="main-container">
+      <form>
+        <div class="input-wrapper">
+          <label for="name">Namn</label>
+          <input id="name" name="name" type="text" />
+        </div>
+
+        <div class="input-wrapper">
+          <label for="date">Datum</label>
+          <input id="date" name="date" type="text" />
+        </div>
+
+        <div class="input-wrapper">
+          <label for="description">Kort beskrivning</label>
+          <textarea
+            id="description"
+            name="description"
+            rows="4"
+            cols="50"
+          ></textarea>
+        </div>
+
+        <div class="input-wrapper">
+          <label for="agenda">Agenda</label>
+          <textarea id="agenda" name="agenda" rows="6" cols="50"></textarea>
+        </div>
+
+        <div class="input-wrapper">
+          <label for="img-input">Bilder</label>
+          <input class="img-input" name="img-input" type="image" alt="image" />
+          <input class="img-input" name="img-input" type="image" alt="image" />
+          <input class="img-input" name="img-input" type="image" alt="image" />
+          <input class="img-input" name="img-input" type="image" alt="image" />
+        </div>
+
+        <div class="input-wrapper">
+          <label for="category">Kategori:</label>
+          <select name="category" id="categorys">
+            <option value="Fest">Fest</option>
+            <option value="Utbildning">Utbildning</option>
+            <option value="Afterwork">Afterwork</option>
+          </select>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

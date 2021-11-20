@@ -1,8 +1,12 @@
-@import "_variables";
+@import "../../_variables";
 
 @mixin flexContainer($direction: column) {
   display: flex;
   flex-direction: $direction;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -18,12 +22,14 @@ img {
 h1 {
   color: $textColor;
   border-bottom: 1px solid $decorationColor;
-  font-size: 4em;
+  font-size: 4rem;
   margin: 0;
 }
 
 nav {
   @include flexContainer();
+  position: sticky;
+  top: 40px;
   padding-right: 20px;
   a {
     text-decoration: none;
@@ -31,8 +37,10 @@ nav {
     border-bottom: 1px solid $decorationColor;
     padding: 10px 0;
     width: 95%;
+    font-size: 1.3rem;
   }
   width: 10%;
+  height: 30%;
 }
 
 #main-container {
