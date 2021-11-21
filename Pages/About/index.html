@@ -11,7 +11,7 @@
     <nav>
       <a href="../index/index.html" target="_blank">Hem</a>
       <a href="../events/events.html" target="_blank">Alla Events</a>
-      <a href="#main-container">Skapa Event</a>
+      <a href="#main-container" target="_blank">Skapa Event</a>
       <a href="../About/index.html" target="_blank">Om Oss</a>
     </nav>
     <div id="main-container">
@@ -42,19 +42,23 @@
       </div>
       <div id="img-container">
         <img
-          src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dGVhbSUyMHBob3RvfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=600&q=60"
+          src="https://media.istockphoto.com/photos/confidence-and-success-picture-id1302147863?b=1&k=20&m=1302147863&s=170667a&w=0&h=v0d9_Lz_uSM0TRikY5l1oAIvrck_hVv3bh64J6C53ms="
           alt="vårt team"
         />
       </div>
 
-      <div id="contact-form">
+      <form id="contact-form">
         <div class="input-wrapper">
           <label for="name">Namn</label>
-          <input type="text" name="name" />
+          <input type="text" name="name" placeholder=" Example: Jane Doe" />
         </div>
         <div class="input-wrapper">
           <label for="mail">E-mail</label>
-          <input type="mail" name="mail" />
+          <input
+            type="mail"
+            name="mail"
+            placeholder=" Example: j.doe@hotmail.com"
+          />
         </div>
         <div class="input-wrapper">
           <label for="msg">Meddelande</label>
@@ -62,9 +66,18 @@
         </div>
         <div class="input-wrapper">
           <label for="btn"></label>
-          <input type="submit" name="btn" value="Skicka" />
+          <button
+            type="submit"
+            id="form-button"
+            form="contact-form"
+            value="Skicka"
+          >
+            Skicka
+          </button>
         </div>
-      </div>
+      </form>
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
