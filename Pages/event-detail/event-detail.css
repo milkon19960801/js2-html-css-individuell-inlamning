@@ -77,19 +77,13 @@ ul li {
   width: 20%;
 }
 .img-wrapper img {
+  transform: scale(1);
   width: 100%;
   border-radius: 5px;
+  transition: all 0.2s ease;
 }
 .img-wrapper img:hover {
-  width: 220px;
-  height: 150px;
-}
-
-@media only screen and (min-width: 1200px) {
-  .img-wrapper img:hover {
-    width: 330px;
-    height: 230px;
-  }
+  transform: scale(1.1);
 }
 
 /*# sourceMappingURL=event-detail.css.map */

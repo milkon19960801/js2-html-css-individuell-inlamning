@@ -2,3 +2,22 @@ $primaryColor: #222831;
 $secondaryColor: #393e46;
 $decorationColor: #fd7014;
 $textColor: #eeeeee;
+
+@mixin navStyleing() {
+  nav {
+    @include flexContainer();
+    position: sticky;
+    top: 40px;
+    padding-right: 20px;
+    a {
+      text-decoration: none;
+      color: $textColor;
+      border-bottom: 1px solid $decorationColor;
+      padding: 10px 0;
+      width: 95%;
+      font-size: 1.3rem;
+    }
+    width: 10%;
+    height: 30%;
+  }
+}
